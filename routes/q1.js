@@ -15,7 +15,7 @@ router.get('/q1/message',(req, res, next)=>{
 
 router.post('/q1',(req,res, next)=>{
     if (req.body.q1=='HACKERMAN'){
-        res.redirect('/q2')
+    res.sendFile(path.join(__dirname,'../','views','q1-1.html'))
     }
     else{
         res.redirect('/q1')

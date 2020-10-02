@@ -11,7 +11,8 @@ router.get('/q2',(req, res, next)=>{
 router.post('/q2',(req,res, next)=>{
     
     if(req.body.q2=='hackclub-2020'){
-       res.redirect('/q3')
+       res.sendFile(path.join(__dirname,'../','views','q2-1.html'))
+
     }
     else{
         res.redirect('/q2')

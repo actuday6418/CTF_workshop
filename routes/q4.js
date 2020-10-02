@@ -9,7 +9,7 @@ router.get('/q4',(req, res, next)=>{
 });
 
 router.post('/q4',(req, res, next)=>{
-    if(req.body.q4=="password" && req.body.email=="arun@kottayam.com"){
+    if(req.body.q4=="OR 1=1" && req.body.email=="OR 1=1"){
         res.redirect('/q4-log');
     }
     else{
